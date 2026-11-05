@@ -1,0 +1,38 @@
+# ---------------------------------------------------------------------------
+# mysql-rescue
+# ---------------------------------------------------------------------------
+
+# Recovery results: copies of customer databases, dumps, reports. Never commit these.
+/jobs/
+
+# MySQL / MariaDB server builds the tool uses (hundreds of MB; copy them in, see README)
+/servers/
+
+# Test data folders and scoreboard runs (rebuild them with tests/fixtures.py)
+/tests/fixtures/
+/tests/work/
+
+# Portable Python runtime (copy a Python 3.12 install into runtime/python64, see README)
+/runtime/
+
+# Dumps and data that may come from customers
+*.sql
+*.csv
+*.ibd
+*.frm
+*.MYD
+*.MYI
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# Remembered window choices and server folders (per PC)
+/settings.json
